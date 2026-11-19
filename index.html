@@ -225,7 +225,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
     <section id="blackjack">
       <h2>Blackjack</h2>
       <p>Blackjack is not one number. The edge depends on the rules and on whether you play basic strategy. With common online rules and perfect basic strategy, the cost is about 0.5%. Weak play is more expensive. A 6:5 payoff on a natural, instead of 3:2, adds well over a percent on its own.</p>
-      <p>Duel's Original blackjack uses an infinite deck, a dealer who stands on soft 17, a 3:2 natural, doubling on any first two cards including after a split, one split, and one card to split aces. There is no surrender. With perfect basic strategy the game math itself keeps about 0.57%. Inside a daily limit of $50,000 wagered per 24 hours, that 0.57% is paid back as instant rakeback, so the net house edge is 0%. The rules and the refund are set out on <a href="https://whyduel.com/games/blackjack">WhyDuel's blackjack page</a>.</p>
+      <p>Duel's Original blackjack uses an infinite deck, a dealer who stands on soft 17, a 3:2 natural, doubling on any first two cards including after a split, one split, and one card to split aces. There is no surrender. ProvablyFair.org's audit puts perfect-strategy RTP at 99.4296%, which is a 0.57% house edge in the usual two-decimal form. Inside a daily limit of $50,000 wagered per 24 hours, that 0.57% is paid back as instant rakeback, so the net house edge is 0%. A longer guide to this rule set as one crypto casino runs it, including how the edge changes with bet size, is <a href="https://whyduel.com/games/blackjack">here</a>.</p>
       <p>Stake lists a 0.57% house edge on Stake Original blackjack for every hand. Within the daily limits, that comparison is 0% vs 0.57%. Above the limit, Duel uses a published scaling edge: 0.10% around a $45,748 base bet, 0.20% around $91,500, and 0.57% at the maximum base bet of $260,608. The vast majority of players never leave the zero-edge limits.</p>
       <p>Duel also offers its own live game, Duel Blackjack, with a listed 99.41% RTP on the main bet, and third-party live tables whose raw edge is about 0.5% with basic strategy. On those third-party tables Duel pays back 50% of the house edge as instant rakeback, so a 0.5% table costs about 0.25%.</p>
       <div class="table-wrap">
@@ -245,7 +245,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>about 0.5%</td>
 <td class='num'>about 99.5%</td>
 <td class='num'>about 0.5%</td>
-<td>WhyDuel</td>
+<td>Wizard of Odds</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Blackjack</span><span class='variant'>Duel Original, basic strategy, within daily limits</span></th>
@@ -253,7 +253,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>0.57%</td>
 <td class='num'>99.43%</td>
 <td class='num'>0%</td>
-<td>WhyDuel</td>
+<td>ProvablyFair.org</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Blackjack</span><span class='variant'>Duel Original, scaling edge above limits</span></th>
@@ -377,7 +377,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
       <h2>Video poker</h2>
       <p>Video poker has an exact return once the paytable and the strategy are fixed. There are 2,598,960 deals from a 52-card deck, and every hold can be counted. Wizard of Odds has published those full enumerations for Jacks or Better. This index uses those totals, last updated 3 August 2026 and fetched on 19 November 2026.</p>
       <p>Full pay 9/6 Jacks or Better, named for the 9x full house and 6x flush, returns 99.5439% with perfect play, a 0.4561% house edge. Dropping the same game to 8/5 cuts the return to 97.2984%. 7/5 returns 96.1472%. 6/5 returns 94.9961%. One step on the paytable is a much bigger change than most betting systems can invent.</p>
-      <p>Duel's Jacks or Better paytable pays more than standard 9/6 on the royal, the straight flush and four of a kind (813x, 58x and 26x at ordinary stakes). WhyDuel, citing ProvablyFair.org, puts perfect-play RTP at 99.90%. Inside the same $50,000 per 24 hours limit, the last 0.10% is refunded, so the net return is 100%. Above about $1,180 a hand the multipliers step down, and at the top tier the game returns 99.39%. The paytable and the limits are on <a href="https://whyduel.com/games/video-poker">WhyDuel's video poker page</a>.</p>
+      <p>Duel's Jacks or Better paytable pays more than standard 9/6 on the royal, the straight flush and four of a kind (813x, 58x and 26x at ordinary stakes). ProvablyFair.org, which enumerated every deal, puts perfect-play RTP at 99.90%. Inside the same $50,000 per 24 hours limit, the last 0.10% is refunded, so the net return is 100%. Above about $1,180 a hand the multipliers step down, and at the top tier the game returns 99.39%.</p>
       <div class="table-wrap">
 <table>
 <caption>Jacks or Better video poker, perfect play</caption>
@@ -427,7 +427,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>0.10%</td>
 <td class='num'>99.90%</td>
 <td class='num'>0%</td>
-<td>WhyDuel</td>
+<td>ProvablyFair.org</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Jacks or Better</span><span class='variant'>Duel Video Poker, top paytable tier</span></th>
@@ -442,9 +442,9 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 
     <section id="originals">
       <h2>Crypto in-house games</h2>
-      <p>Most crypto casinos price their own dice, crash, mines, plinko and limbo games at 99% RTP, a 1% house edge. Some modes run at 97% or lower. That 1% is also the usual published line on Stake Originals such as Dice, Limbo and Mines. It does not apply to Stake Original blackjack, which is listed separately at 0.57%.</p>
-      <p>Duel's Originals in this family have raw math of 99.9%. The last 0.1% is refunded as instant rakeback on wagers up to $50,000 per 24 hours, usually with a $1,000 max bet, so the net edge is 0%. Above those limits the edge is from 0.1%, and it rises with bet size. The game shows the current figure before you bet. The vast majority of players stay inside the daily window.</p>
-      <p>Two Duel titles are published at 100% RTP rather than as 99.9% plus a 0.1% refund: Beef, and Castle Roulette, Duel's own 48-position live wheel. Those are listed at 0% net edge as published.</p>
+      <p>Most crypto casinos price their own dice, crash, mines, plinko and limbo games at 99% RTP, a 1% house edge. Some modes run at 97% or lower. FairGambling lists Stake's top house games, Dice, Mines and Plinko, at 99.0% RTP. That 1% line does not apply to Stake Original blackjack, which is listed separately at 0.57%.</p>
+      <p>Duel's Dice, Crash, Plinko, Mines, Limbo and Keno have raw math of 99.9%, as derived in ProvablyFair.org's audit. The last 0.1% is refunded as instant rakeback on wagers up to $50,000 per 24 hours, usually with a $1,000 max bet, so the net edge is 0%. Hilo is grouped with those titles in the same refund model. Above those limits the edge is from 0.1%, and it rises with bet size. The game shows the current figure before you bet. The vast majority of players stay inside the daily window.</p>
+      <p>Castle Roulette, Duel's own 48-position live wheel, is audited at 100% RTP, a 0% house edge. Beef is different. ProvablyFair.org's audit, at the base stake tier, puts proven RTP at 99.2%, a 0.8% house edge, with a 4 million round simulation at 99.147%.</p>
       <div class="table-wrap">
 <table>
 <caption>Crypto in-house games and Originals</caption>
@@ -462,7 +462,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>1% typical</td>
 <td class='num'>99% typical</td>
 <td class='num'>1% typical</td>
-<td>WhyDuel</td>
+<td>FairGambling</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Stake Originals (Dice, Limbo, Mines and similar)</span><span class='variant'>Stake Originals other than blackjack</span></th>
@@ -470,7 +470,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>1%</td>
 <td class='num'>99%</td>
 <td class='num'>1%</td>
-<td>WhyDuel</td>
+<td>FairGambling</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Stake house games (tracker average)</span><span class='variant'>FairGambling average across Stake house games</span></th>
@@ -478,7 +478,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>1.7% average</td>
 <td class='num'>98.3% average</td>
 <td class='num'>1.7% average</td>
-<td>WhyDuel</td>
+<td>FairGambling</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Duel Originals (Dice, Crash, Plinko, Mines, Limbo, Keno, Hilo)</span><span class='variant'>Within daily zero-edge limits</span></th>
@@ -486,7 +486,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>0.10%</td>
 <td class='num'>99.90%</td>
 <td class='num'>0%</td>
-<td>WhyDuel</td>
+<td>ProvablyFair.org</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Duel Originals (Dice, Crash, Plinko, Mines, Limbo, Keno, Hilo)</span><span class='variant'>Above daily limits, scaling edge</span></th>
@@ -497,12 +497,12 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td>WhyDuel</td>
 </tr>
 <tr>
-<th scope='row'><span class='game'>Beef</span><span class='variant'>Duel Original, stated 100% RTP</span></th>
+<th scope='row'><span class='game'>Beef</span><span class='variant'>Duel Original, base stake tier</span></th>
 <td>Duel</td>
-<td class='num'>0%</td>
-<td class='num'>100%</td>
-<td class='num'>0%</td>
-<td>WhyDuel</td>
+<td class='num'>0.8%</td>
+<td class='num'>99.2%</td>
+<td class='num'>0.8%</td>
+<td>ProvablyFair.org</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Castle Roulette</span><span class='variant'>Duel Original live wheel, 48 positions</span></th>
@@ -510,7 +510,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>0%</td>
 <td class='num'>100%</td>
 <td class='num'>0%</td>
-<td>WhyDuel</td>
+<td>ProvablyFair.org</td>
 </tr>
 </tbody></table></div>
     </section>
@@ -519,7 +519,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
       <h2>Slots, game shows and keno</h2>
       <p>Online slots usually sit between 94% and 98% RTP, a 2% to 6% house edge. The same title is often offered in several versions. Live game shows are typically in a 94% to 97% band, and the exact return depends on the bet spot. Land-based keno is in another league: Wizard of Odds puts live keno in Las Vegas at 65% to 80% RTP, a 20% to 35% house edge.</p>
       <p>On third-party slots and live games, Duel pays 50% of the house edge back as instant, withdrawable cash. A 96% slot, which has a 4% edge, then plays at a 2% net edge. FairGambling's Duel catalogue, fetched on 19 November 2026, lists Gates of Olympus 1000 at 96.5% and Sweet Bonanza 1000 at 96.53%. If the same 50% rakeback applies, those net edges are 1.75% and about 1.74%. Always check the tile for the version you are actually playing.</p>
-      <p>Groomer's Van is a slot Duel built itself. WhyDuel lists it at 100% RTP. The same page notes that ProvablyFair.org simulated 30 million rounds at 100.06% RTP.</p>
+      <p>Groomer's Van is a slot Duel built itself. ProvablyFair.org enumerates its RTP at 99.9720% with no edge applied, inside 0.1 points of Duel's published 100% figure, and simulated 30 million rounds at 100.06% RTP.</p>
       <div class="table-wrap">
 <table>
 <caption>Slots, live game shows and land-based keno</caption>
@@ -537,7 +537,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>2% to 6%</td>
 <td class='num'>94% to 98%</td>
 <td class='num'>2% to 6%</td>
-<td>WhyDuel</td>
+<td>Typical published band</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Online slots at Duel (example 96% title)</span><span class='variant'>Third-party slot with 50% instant rakeback</span></th>
@@ -569,7 +569,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>0%</td>
 <td class='num'>100%</td>
 <td class='num'>0%</td>
-<td>WhyDuel</td>
+<td>ProvablyFair.org</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Live game shows (typical)</span><span class='variant'>Third-party live game shows</span></th>
@@ -577,7 +577,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>4% to 6%</td>
 <td class='num'>94% to 97%</td>
 <td class='num'>4% to 6%</td>
-<td>WhyDuel</td>
+<td>Typical published band</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Land-based keno</span><span class='variant'>Typical live keno in Las Vegas and similar markets</span></th>
@@ -592,8 +592,8 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 
     <section id="comparison">
       <h2>Casino comparison</h2>
-      <p>This section only includes operator figures that can be tied to a public page. It is not a ranking of every casino, and it is not a complete catalogue. The comparison that can be sourced most clearly is Duel against Stake, using Stake's own published blackjack edge, the usual 1% line on Stake Originals other than blackjack, FairGambling's blended house-game and sportsbook averages, and Duel's published refund model.</p>
-      <p>A longer walkthrough of those figures is in the <a href="https://whyduel.com/duel-vs-casinos/duel-vs-stake">Duel vs Stake comparison on whyduel.com</a>. The background math for the table-game rows is also collected in WhyDuel's <a href="https://whyduel.com/house-edge-guide">house edge guide</a>.</p>
+      <p>This section only includes operator figures that can be tied to a public page. It is not a ranking of every casino, and it is not a complete catalogue. The comparison that can be sourced most clearly is Duel against Stake, using ProvablyFair.org's Duel audit figures, FairGambling's blended house-game and sportsbook averages, FairGambling's 99.0% line on Stake Dice, Mines and Plinko, and the published Duel refund model.</p>
+      <p>A longer walkthrough of those figures is in the <a href="https://whyduel.com/duel-vs-casinos/duel-vs-stake">Duel vs Stake comparison on whyduel.com</a>.</p>
       <div class="table-wrap">
 <table>
 <caption>Operator comparison where figures can be sourced</caption>
@@ -675,7 +675,7 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
 <td class='num'>5.36%</td>
 <td class='num'>94.64%</td>
 <td class='num'>5.36%</td>
-<td>FairGambling average, as cited on WhyDuel</td>
+<td>FairGambling average</td>
 </tr>
 <tr>
 <th scope='row'><span class='game'>Duel Arena (player versus player)</span></th>
@@ -693,31 +693,32 @@ code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monosp
       <h2>Methodology</h2>
       <p>Each row is one of four kinds of number.</p>
       <p><strong>Exact calculation.</strong> Roulette edges are closed-form fractions from the number of pockets and the published payout, including the first-five bet and la partage on even-money bets. The two-decimal figures in the tables are the usual rounded forms of those fractions.</p>
-      <p><strong>Published reference.</strong> Baccarat, craps, Jacks or Better paytables, and the land-keno range come from Wizard of Odds pages fetched on 19 November 2026. The Jacks or Better totals are the site's full enumerations (return 0.99543904 for 9/6, 0.97298434 for 8/5, 0.961472 for 7/5, 0.949961 for 6/5).</p>
-      <p><strong>Published operator.</strong> Duel figures come from live whyduel.com pages checked on the same day, which in turn cite Duel's game info, economics changelog and, where named, ProvablyFair.org. Stake Original blackjack at 0.57% and Stake Originals at 1% are taken from those WhyDuel pages, which cite Stake's own listings.</p>
-      <p><strong>Published tracker.</strong> FairGambling averages were read on 19 November 2026 from FairGambling's Duel page (house-game RTP 100%, sport edge 1.96%, and the two slot catalogue figures above) and, for Stake, from the WhyDuel comparison that cites FairGambling (house-game average 98.3%, sport edge 5.36%).</p>
+      <p><strong>Published reference.</strong> Baccarat, craps, Jacks or Better paytables, the land-keno range and the typical online blackjack band come from Wizard of Odds pages fetched on 19 November 2026. The Jacks or Better totals are the site's full enumerations (return 0.99543904 for 9/6, 0.97298434 for 8/5, 0.961472 for 7/5, 0.949961 for 6/5). The blackjack page lists 0.43% under Atlantic City rules. The 0.5% row is a rounding band around typical online 3:2 games, not a full rule-by-rule scan.</p>
+      <p><strong>Published operator and audit.</strong> Raw Duel math for Original blackjack, video poker, Dice, Crash, Plinko, Mines, Limbo, Keno, Beef, Castle Roulette and Groomer's Van comes from ProvablyFair.org's Duel audit, checked on 19 November 2026. The 0.57% blackjack edge is the usual two-decimal form of the audited 99.4296% RTP (a 0.5704% edge). Refunds, daily limits, scaling edges, live-game RTPs, the 99.39% video poker top tier and Duel Arena rake are taken from live WhyDuel pages checked the same day, which quote Duel's game info and economics changelog. Stake Original blackjack at 0.57% is taken from those WhyDuel pages, which record Stake's own listing via an 11 October 2026 Wayback capture.</p>
+      <p><strong>Published tracker.</strong> FairGambling averages were read on 19 November 2026 from FairGambling's Duel page (house-game RTP 100%, sport edge 1.96%, and the two slot catalogue figures above) and from FairGambling's Stake page (house-game RTP 98.3%, sport edge 5.36%, and top house games Dice, Mines and Plinko at 99.0% RTP).</p>
       <p>No row was invented to fill a gap. If a figure is approximate ("about 0.5%"), it is marked that way. If a source gives a range, the range is what appears. Duel-specific wording follows the operator's published limits: 0% vs 0.57% for blackjack within the limits, from 0.1% once those limits are exceeded, and "the vast majority" for how many players stay inside the window.</p>
       <p>This page does not model betting systems, card counting, slot bonus-buy modes, or the effect of imperfect strategy except to note that mistakes raise the edge in blackjack and video poker. Variance is not edge. A 0% game can still empty a bankroll on a short session, and a 5% game can still have a winning night.</p>
     </section>
 
     <section id="sources">
       <h2>Sources</h2>
-      <p>All of the following were opened over https on 19 November 2026, except the Stake Original blackjack listing, which WhyDuel records from Stake's game page via an 11 October 2026 Wayback capture. Duel's own economics pages are JavaScript shells when fetched without a browser, so the Duel numbers below are taken from the live WhyDuel pages that quote them.</p>
+      <p>All of the following were opened over https on 19 November 2026, except the Stake Original blackjack listing, which WhyDuel records from Stake's game page via an 11 October 2026 Wayback capture.</p>
       <ol class="sources">
         <li><span class="n">1.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/roulette/">Roulette</a>. Single-zero 1/37 or 2.70%, double-zero 1/19 or 5.26%, first-five 7.89%, triple-zero 1/13 or 7.69%.</li>
         <li><span class="n">2.</span> Wizard of Odds, <a href="https://wizardofodds.com/ask-the-wizard/178/">Ask the Wizard 178</a>. Eight-deck baccarat, ties counted: banker 1.06%, player 1.24%, tie 14.36%.</li>
         <li><span class="n">3.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/craps/">Craps</a>. Pass 1.41%, don't pass 1.36%, taking or laying odds 0.00%.</li>
         <li><span class="n">4.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/video-poker/tables/jacks-or-better/">Jacks or Better tables</a>, last updated 3 August 2026. 9/6, 8/5, 7/5 and 6/5 perfect-play returns.</li>
         <li><span class="n">5.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/keno/">Keno</a>. Live keno in Las Vegas, 65% to 80% return.</li>
-        <li><span class="n">6.</span> WhyDuel, <a href="https://whyduel.com/house-edge-guide">Casino house edge guide</a>. Typical table-game figures, crypto 99% RTP line, slot and game-show bands, Duel refund model.</li>
-        <li><span class="n">7.</span> WhyDuel, <a href="https://whyduel.com/games/blackjack">Blackjack at Duel</a>. 0% vs 0.57% within the limits, scaling edge, live-game RTPs, Stake Original blackjack 0.57%.</li>
-        <li><span class="n">8.</span> WhyDuel, <a href="https://whyduel.com/games/video-poker">Video poker at Duel</a>. Paytable, 99.90% perfect play, 99.39% top tier.</li>
-        <li><span class="n">9.</span> WhyDuel, <a href="https://whyduel.com/duel-vs-casinos/duel-vs-stake">Duel vs Stake</a>. FairGambling averages for Stake house games and both sportsbooks, 1% to 4% band.</li>
-        <li><span class="n">10.</span> WhyDuel, <a href="https://whyduel.com/games/slots">Slots at Duel</a>. 50% instant rakeback example, Groomer's Van, usual 94% to 97% third-party band.</li>
-        <li><span class="n">11.</span> FairGambling, <a href="https://www.fairgambling.com/duel">Duel profile</a>. Average house RTP 100%, average sport edge 1.96%, Gates of Olympus 1000 96.5%, Sweet Bonanza 1000 96.53%.</li>
-        <li><span class="n">12.</span> WhyDuel Dice, Crash and Plinko game pages, checked on the same day, confirm the 99.9% raw math, the 0.1% refund and the "from 0.1%" scaling language already cited in the house edge guide above.</li>
+        <li><span class="n">6.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/blackjack/">Blackjack</a>. Atlantic City rules 0.43%. The typical online 3:2 row uses a 0.4% to 0.6% rounding band around that kind of game.</li>
+        <li><span class="n">7.</span> ProvablyFair.org, <a href="https://audit.provablyfair.org/casino/duel/">Duel audit dashboard</a>. Proven RTPs for Original blackjack (99.4296%), video poker (99.9%), Dice, Crash, Plinko, Mines, Limbo and Keno (99.9%), Beef (99.2%), Castle Roulette (100.0%) and Groomer's Van (enumerated 99.9720%, 30 million round simulation 100.06%).</li>
+        <li><span class="n">8.</span> FairGambling, <a href="https://www.fairgambling.com/duel">Duel profile</a>. Average house RTP 100%, average sport edge 1.96%, Gates of Olympus 1000 96.5%, Sweet Bonanza 1000 96.53%.</li>
+        <li><span class="n">9.</span> FairGambling, <a href="https://www.fairgambling.com/stake">Stake profile</a>. Average house-game RTP 98.3%, average sport edge 5.36%, top house games (Dice, Mines, Plinko) 99.0%.</li>
+        <li><span class="n">10.</span> WhyDuel, Blackjack at Duel. Scaling edge above the daily limit, live-game RTPs, Stake Original blackjack 0.57%, and the published refund inside the limit.</li>
+        <li><span class="n">11.</span> WhyDuel, Video poker at Duel. Ordinary-stakes paytable, daily refund, and the 99.39% top tier.</li>
+        <li><span class="n">12.</span> WhyDuel, Casino house edge guide. Duel refund model, Duel Arena, and the typical published slot and game-show bands.</li>
+        <li><span class="n">13.</span> WhyDuel, Slots at Duel. 50% instant rakeback example.</li>
       </ol>
-      <p>Wizard of Odds, FairGambling and WhyDuel remain responsible for their own pages. If a source changes, the CSV should be updated on the next check, not silently padded.</p>
+      <p>Wizard of Odds, FairGambling, ProvablyFair.org and WhyDuel remain responsible for their own pages. If a source changes, the CSV should be updated on the next check, not silently padded.</p>
     </section>
 
     <footer>

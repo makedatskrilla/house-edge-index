@@ -1,12 +1,10 @@
 # House Edge Index
 
-A static data project that collects published and calculated house edge and RTP figures for common casino games. It is meant to be hosted as a GitHub Pages site. It is not a casino, a bonus page or a sales site.
+A static data project that collects published and calculated house edge and RTP figures for common casino games. It is hosted as a GitHub Pages site. It is not a casino, a bonus page or a sales site.
 
-The live page, once Pages is enabled, is designed to live at:
+The live page is at:
 
 https://makedatskrilla.github.io/house-edge-index/
-
-Nothing in this repository has been published yet. A GitHub account still has to be created, the repo still has to be pushed, and Pages still has to be turned on.
 
 ## Files
 
@@ -38,15 +36,15 @@ All percentages are written without a percent sign, so 2.70% appears as `2.7027`
 
 ## How the numbers were built
 
-Roulette edges are exact fractions (1/37, 2/38, 3/38, 3/39, 0.5/37) and were checked against Wizard of Odds. Baccarat, craps, Jacks or Better paytables and the land-keno range come from Wizard of Odds pages fetched on 19 November 2026. Duel figures come from live whyduel.com pages checked the same day. Stake Original blackjack at 0.57% and Stake Originals (other than blackjack) at 1% are taken from those WhyDuel pages. FairGambling averages were read from FairGambling's Duel page and, for Stake, from the WhyDuel comparison that cites FairGambling.
+Roulette edges are exact fractions (1/37, 2/38, 3/38, 3/39, 0.5/37) and were checked against Wizard of Odds. Baccarat, craps, Jacks or Better paytables, the land-keno range and the typical online blackjack band come from Wizard of Odds pages fetched on 19 November 2026. Raw Duel math for Original blackjack, video poker, Dice, Crash, Plinko, Mines, Limbo, Keno, Beef, Castle Roulette and Groomer's Van comes from ProvablyFair.org's Duel audit, checked the same day. Refunds, daily limits, scaling edges, live-game RTPs and Duel Arena rake come from live WhyDuel pages that quote Duel's game info and economics changelog. Stake Original blackjack at 0.57% is recorded on those pages from a Stake game-page Wayback capture. FairGambling averages were read from FairGambling's Duel and Stake pages, including Stake's 99.0% top house-game line.
 
 Every row has a source or an exact calculation. No figure was invented to fill a gap. A range stays a range.
 
 The full write-up, including how 0% vs 0.57% is used for blackjack within Duel's daily limits, is in `index.html`.
 
-## Pages setup (not done)
+## Pages setup
 
-This repo has not been pushed. When it is, GitHub Pages should be set to deploy from the root of the default branch. No custom domain is required. After the first deploy, open the Pages URL and confirm that `index.html` and `data/house-edge.csv` both load.
+GitHub Pages deploys from the root of the default branch. No custom domain is used. The live URL is https://makedatskrilla.github.io/house-edge-index/. After a deploy, open that URL and confirm that `index.html` and `data/house-edge.csv` both load.
 
 ## License
 

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>House Edge Index: RTP and odds tables for casino games</title>
+  <meta name="description" content="A sourced index of house edge and RTP figures for roulette, blackjack, video poker, crypto originals, slots and a small set of casinos. Last checked 19 November 2026.">
+  <meta name="robots" content="index,follow">
+  <style>
+:root {
+  --bg: #f3efe6;
+  --paper: #fbf8f1;
+  --ink: #1e1a14;
+  --muted: #5b564c;
+  --line: #d7d0c2;
+  --accent: #1f4a43;
+  --link: #1a4d6e;
+  --th: #ece6d8;
+  --band: #e7f0ed;
+}
+* { box-sizing: border-box; }
+html { font-size: 18px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+}
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--accent); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+header.hero {
+  padding: 2.4rem 0 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+p.kicker {
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+h1, h2, h3 {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink);
+}
+h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin: 0 0 0.6rem; }
+h2 { font-size: 1.6rem; margin: 2.4rem 0 0.8rem; }
+h3 { font-size: 1.2rem; margin: 1.6rem 0 0.5rem; }
+.lede { font-size: 1.08rem; max-width: 42rem; margin: 0 0 1rem; }
+.meta {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+  color: var(--muted); font-size: 0.9rem; margin: 0;
+}
+.meta a { color: inherit; }
+nav.toc {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 1rem 1.2rem;
+  margin: 1.6rem 0 0;
+}
+nav.toc h2 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+nav.toc ol { margin: 0; padding-left: 1.2rem; }
+nav.toc li { margin: 0.2rem 0; }
+section p { max-width: 42.5rem; }
+.note, .callout {
+  max-width: 42.5rem;
+  border-left: 3px solid var(--accent);
+  padding: 0.2rem 0 0.2rem 1rem;
+  margin: 1rem 0 1.2rem;
+  color: var(--ink);
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.4rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 0.92rem; }
+caption {
+  text-align: left; font-weight: 600; padding: 0.8rem 0.9rem 0.4rem;
+  font-family: Georgia, "Times New Roman", serif; font-size: 1rem;
+  caption-side: top;
+}
+th, td { padding: 0.55rem 0.8rem; border-top: 1px solid var(--line); vertical-align: top; text-align: left; }
+thead th { background: var(--th); border-top: 0; font-size: 0.8rem; letter-spacing: 0.02em; text-transform: uppercase; }
+tbody th { font-weight: 600; min-width: 16rem; }
+.game { display: block; }
+.variant { display: block; font-weight: 400; color: var(--muted); font-size: 0.86rem; padding-top: 0.15rem; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: nowrap; }
+tbody tr:nth-child(even) { background: #f3eee4; }
+.sources { list-style: none; padding: 0; }
+.sources li { margin: 0 0 0.7rem; max-width: 45rem; padding-left: 1.6rem; position: relative; }
+.sources li span.n { position: absolute; left: 0; color: var(--muted); font-variant-numeric: tabular-nums; }
+footer {
+  margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 0.9rem;
+}
+footer p { max-width: 42.5rem; }
+code, .file { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.88em; }
+@media (max-width: 640px) {
+  html { font-size: 17px; }
+  .wrap { padding: 0 0.9rem 3rem; }
+  table { font-size: 0.86rem; }
+  tbody th { min-width: 14rem; }
+}
+@media print {
+  body { background: #fff; }
+  a { color: inherit; text-decoration: none; }
+  nav.toc { break-after: avoid; }
+  .table-wrap { border: 1px solid #ccc; }
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <p class="kicker">Open data index</p>
+      <h1>House Edge Index</h1>
+      <p class="lede">A sourced table of house edge and return-to-player figures for common casino games. This is a static data project. It is not a casino, a bonus page or an invitation to play.</p>
+      <p class="meta">
+        <span>Last checked 19 November 2026, Europe/Stockholm</span>
+        <span><a href="data/house-edge.csv">Download the CSV</a></span>
+        <span>License: <a href="LICENSE">CC BY 4.0</a></span>
+      </p>
+    </header>
+
+    <nav class="toc" aria-label="Contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#what">What house edge is</a></li>
+        <li><a href="#how">How to read the tables</a></li>
+        <li><a href="#roulette">Roulette</a></li>
+        <li><a href="#blackjack">Blackjack</a></li>
+        <li><a href="#baccarat">Baccarat</a></li>
+        <li><a href="#craps">Craps</a></li>
+        <li><a href="#video-poker">Video poker</a></li>
+        <li><a href="#originals">Crypto in-house games</a></li>
+        <li><a href="#slots">Slots, game shows and keno</a></li>
+        <li><a href="#comparison">Casino comparison</a></li>
+        <li><a href="#method">Methodology</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ol>
+    </nav>
+
+    <section id="what">
+      <h2>What house edge is</h2>
+      <p>House edge is the share of each wager a game keeps in the long run. It is built into the payouts. It is not a fee you see taken off the bet.</p>
+      <p>A single-zero roulette wheel has 37 pockets. A straight-up number pays 35 to 1. A fair price would be 36 to 1. The missing unit is 1/37 of the stake, which is 2.70%. That cost does not decide any one spin. It is the average over a very large number of spins.</p>
+      <p>RTP, return to player, is the same number from the other side. RTP plus house edge equals 100%. A 96% slot has a 4% house edge. A 100% RTP game has no house edge.</p>
+      <p>These are long-run figures. A 96% slot does not hand back $96 on every $100 you put in. It returns 96% of all money wagered, across a huge number of spins. One session can land far above or far below that average.</p>
+    </section>
+
+    <section id="how">
+      <h2>How to read the tables</h2>
+      <p><strong>House edge</strong> is the raw expected cost of the game math, before any rakeback. <strong>RTP</strong> is 100% minus that raw edge, except where a source publishes RTP directly. <strong>Net edge</strong> is the cost after a published rakeback or refund. If no refund applies, net edge equals house edge.</p>
+      <p>"Typical" means the standard published rules for that game, not every version in the market. Online slots in particular are often shipped in several RTP versions. If a casino does not show the version it runs, the published maximum is not a safe assumption.</p>
+      <p>A range stays a range. This index does not replace a published band with a fake exact figure. Operator numbers can change. What you see here is a snapshot of the cited pages on 19 November 2026.</p>
+      <p>The same rows, with full rules, conditions and source notes, are in <a href="data/house-edge.csv"><span class="file">data/house-edge.csv</span></a>. That file is meant to be reused, including as a later dataset.</p>
+    </section>
+
+    <section id="roulette">
+      <h2>Roulette</h2>
+      <p>Roulette is the cleanest house-edge example because the missing payout unit is obvious. On a 37-pocket wheel the edge on standard bets is exactly 1/37, or 2.7027%, usually written 2.70%. A 38-pocket American wheel doubles the zeros and raises the edge to 2/38, or 5.26%. A 39-pocket triple-zero wheel is 3/39, or 7.69%.</p>
+      <p>Two details matter. The American first-five bet (0, 00, 1, 2 and 3) is worse than the rest of that wheel, at 3/38 or 7.89%. French la partage, on even-money bets only, returns half the stake when zero hits and cuts those bets to 0.5/37, or 1.35%.</p>
+      <div class="table-wrap">
+<table>
+<caption>Roulette house edge by wheel and rule</caption>
+<thead><tr>
+<th scope='col'>Game and variant</th>
+<th scope='col'>Operator</th>
+<th scope='col' class='num'>House edge</th>
+<th scope='col' class='num'>RTP</th>
+<th scope='col' class='num'>Net edge</th>
+<th scope='col'>Source</th>
+</tr></thead><tbody>
+<tr>
+<th scope='row'><span class='game'>Roulette</span><span class='variant'>European single zero</span></th>
+<td>Typical</td>
+<td class='num'>2.70%</td>
+<td class='num'>97.30%</td>
+<td class='num'>2.70%</td>
+<td>Own calculation</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Roulette</span><span class='variant'>American double zero</span></th>
+<td>Typical</td>
+<td class='num'>5.26%</td>
+<td class='num'>94.74%</td>
+<td class='num'>5.26%</td>
+<td>Own calculation</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Roulette</span><span class='variant'>American first-five bet (0-00-1-2-3)</span></th>
+<td>Typical</td>
+<td class='num'>7.89%</td>
+<td class='num'>92.11%</td>
+<td class='num'>7.89%</td>
+<td>Own calculation</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Roulette</span><span class='variant'>Triple zero</span></th>
+<td>Typical</td>
+<td class='num'>7.69%</td>
+<td class='num'>92.31%</td>
+<td class='num'>7.69%</td>
+<td>Own calculation</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Roulette</span><span class='variant'>French la partage (even-money bets)</span></th>
+<td>Typical</td>
+<td class='num'>1.35%</td>
+<td class='num'>98.65%</td>
+<td class='num'>1.35%</td>
+<td>Own calculation</td>
+</tr>
+</tbody></table></div>
+      <p>The percentages in the table are the usual two-decimal forms. The exact fractions are 1/37, 2/38, 3/38, 3/39 and 0.5/37. They match the figures on Wizard of Odds.</p>
+    </section>
+
+    <section id="blackjack">
+      <h2>Blackjack</h2>
+      <p>Blackjack is not one number. The edge depends on the rules and on whether you play basic strategy. With common online rules and perfect basic strategy, the cost is about 0.5%. Weak play is more expensive. A 6:5 payoff on a natural, instead of 3:2, adds well over a percent on its own.</p>
+      <p>Duel's Original blackjack uses an infinite deck, a dealer who stands on soft 17, a 3:2 natural, doubling on any first two cards including after a split, one split, and one card to split aces. There is no surrender. With perfect basic strategy the game math itself keeps about 0.57%. Inside a daily limit of $50,000 wagered per 24 hours, that 0.57% is paid back as instant rakeback, so the net house edge is 0%. The rules and the refund are set out on <a href="https://whyduel.com/games/blackjack">WhyDuel's blackjack page</a>.</p>
+      <p>Stake lists a 0.57% house edge on Stake Original blackjack for every hand. Within the daily limits, that comparison is 0% vs 0.57%. Above the limit, Duel uses a published scaling edge: 0.10% around a $45,748 base bet, 0.20% around $91,500, and 0.57% at the maximum base bet of $260,608. The vast majority of players never leave the zero-edge limits.</p>
+      <p>Duel also offers its own live game, Duel Blackjack, with a listed 99.41% RTP on the main bet, and third-party live tables whose raw edge is about 0.5% with basic strategy. On those third-party tables Duel pays back 50% of the house edge as instant rakeback, so a 0.5% table costs about 0.25%.</p>
+      <div class="table-wrap">
+<table>
+<caption>Blackjack house edge by rules and operator</caption>
+<thead><tr>
+<th scope='col'>Game and variant</th>
+<th scope='col'>Operator</th>
+<th scope='col' class='num'>House edge</th>
+<th scope='col' class='num'>RTP</th>
+<th scope='col' class='num'>Net edge</th>
+<th scope='col'>Source</th>
+</tr></thead><tbody>
+<tr>
+<th scope='row'><span class='game'>Blackjack</span><span class='variant'>Typical online, basic strategy, 3:2</span></th>
+<td>Typical</td>
+<td class='num'>about 0.5%</td>
+<td class='num'>about 99.5%</td>
+<td class='num'>about 0.5%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Blackjack</span><span class='variant'>Duel Original, basic strategy, within daily limits</span></th>
+<td>Duel</td>
+<td class='num'>0.57%</td>
+<td class='num'>99.43%</td>
+<td class='num'>0%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Blackjack</span><span class='variant'>Duel Original, scaling edge above limits</span></th>
+<td>Duel</td>
+<td class='num'>0.10% to 0.57%</td>
+<td class='num'>99.90% to 99.43%</td>
+<td class='num'>from 0.1%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Blackjack</span><span class='variant'>Stake Original Blackjack</span></th>
+<td>Stake</td>
+<td class='num'>0.57%</td>
+<td class='num'>99.43%</td>
+<td class='num'>0.57%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Blackjack</span><span class='variant'>Duel Blackjack (Duel's own live game), main bet</span></th>
+<td>Duel</td>
+<td class='num'>0.59%</td>
+<td class='num'>99.41%</td>
+<td class='num'>0.59%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Blackjack</span><span class='variant'>Third-party live blackjack at Duel, after rakeback</span></th>
+<td>Duel</td>
+<td class='num'>0.5%</td>
+<td class='num'>99.5%</td>
+<td class='num'>0.25%</td>
+<td>WhyDuel</td>
+</tr>
+</tbody></table></div>
+    </section>
+
+    <section id="baccarat">
+      <h2>Baccarat</h2>
+      <p>The usual published edges for eight-deck baccarat, with ties counted as part of the initial wager, are 1.06% on banker, 1.24% on player and 14.36% on the tie. Some writers ignore ties and quote 1.17% and 1.36% instead. This index follows the first definition, which is the one Wizard of Odds uses, because it treats the money you put down the same way blackjack and video poker analyses do.</p>
+      <div class="table-wrap">
+<table>
+<caption>Eight-deck baccarat, ties counted in the wager</caption>
+<thead><tr>
+<th scope='col'>Game and variant</th>
+<th scope='col'>Operator</th>
+<th scope='col' class='num'>House edge</th>
+<th scope='col' class='num'>RTP</th>
+<th scope='col' class='num'>Net edge</th>
+<th scope='col'>Source</th>
+</tr></thead><tbody>
+<tr>
+<th scope='row'><span class='game'>Baccarat</span><span class='variant'>Banker bet, 8 decks, ties counted in the wager</span></th>
+<td>Typical</td>
+<td class='num'>1.06%</td>
+<td class='num'>98.94%</td>
+<td class='num'>1.06%</td>
+<td>Wizard of Odds</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Baccarat</span><span class='variant'>Player bet, 8 decks, ties counted in the wager</span></th>
+<td>Typical</td>
+<td class='num'>1.24%</td>
+<td class='num'>98.76%</td>
+<td class='num'>1.24%</td>
+<td>Wizard of Odds</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Baccarat</span><span class='variant'>Tie bet, 8 decks</span></th>
+<td>Typical</td>
+<td class='num'>14.36%</td>
+<td class='num'>85.64%</td>
+<td class='num'>14.36%</td>
+<td>Wizard of Odds</td>
+</tr>
+</tbody></table></div>
+    </section>
+
+    <section id="craps">
+      <h2>Craps</h2>
+      <p>The pass line is the standard bet at a craps table. It pays even money and carries a 1.41% house edge. Don't pass is slightly lower, at 1.36%. The odds bet you can place behind either of those is paid at true odds and has a 0% house edge on the odds portion itself. The line bet still carries its own edge. Proposition bets are much more expensive and are not listed here one by one.</p>
+      <div class="table-wrap">
+<table>
+<caption>Craps house edge per bet made</caption>
+<thead><tr>
+<th scope='col'>Game and variant</th>
+<th scope='col'>Operator</th>
+<th scope='col' class='num'>House edge</th>
+<th scope='col' class='num'>RTP</th>
+<th scope='col' class='num'>Net edge</th>
+<th scope='col'>Source</th>
+</tr></thead><tbody>
+<tr>
+<th scope='row'><span class='game'>Craps</span><span class='variant'>Pass line</span></th>
+<td>Typical</td>
+<td class='num'>1.41%</td>
+<td class='num'>98.59%</td>
+<td class='num'>1.41%</td>
+<td>Wizard of Odds</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Craps</span><span class='variant'>Don't pass</span></th>
+<td>Typical</td>
+<td class='num'>1.36%</td>
+<td class='num'>98.64%</td>
+<td class='num'>1.36%</td>
+<td>Wizard of Odds</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Craps</span><span class='variant'>Taking or laying odds</span></th>
+<td>Typical</td>
+<td class='num'>0%</td>
+<td class='num'>100%</td>
+<td class='num'>0%</td>
+<td>Wizard of Odds</td>
+</tr>
+</tbody></table></div>
+    </section>
+
+    <section id="video-poker">
+      <h2>Video poker</h2>
+      <p>Video poker has an exact return once the paytable and the strategy are fixed. There are 2,598,960 deals from a 52-card deck, and every hold can be counted. Wizard of Odds has published those full enumerations for Jacks or Better. This index uses those totals, last updated 3 August 2026 and fetched on 19 November 2026.</p>
+      <p>Full pay 9/6 Jacks or Better, named for the 9x full house and 6x flush, returns 99.5439% with perfect play, a 0.4561% house edge. Dropping the same game to 8/5 cuts the return to 97.2984%. 7/5 returns 96.1472%. 6/5 returns 94.9961%. One step on the paytable is a much bigger change than most betting systems can invent.</p>
+      <p>Duel's Jacks or Better paytable pays more than standard 9/6 on the royal, the straight flush and four of a kind (813x, 58x and 26x at ordinary stakes). WhyDuel, citing ProvablyFair.org, puts perfect-play RTP at 99.90%. Inside the same $50,000 per 24 hours limit, the last 0.10% is refunded, so the net return is 100%. Above about $1,180 a hand the multipliers step down, and at the top tier the game returns 99.39%. The paytable and the limits are on <a href="https://whyduel.com/games/video-poker">WhyDuel's video poker page</a>.</p>
+      <div class="table-wrap">
+<table>
+<caption>Jacks or Better video poker, perfect play</caption>
+<thead><tr>
+<th scope='col'>Game and variant</th>
+<th scope='col'>Operator</th>
+<th scope='col' class='num'>House edge</th>
+<th scope='col' class='num'>RTP</th>
+<th scope='col' class='num'>Net edge</th>
+<th scope='col'>Source</th>
+</tr></thead><tbody>
+<tr>
+<th scope='row'><span class='game'>Jacks or Better</span><span class='variant'>Full pay 9/6, perfect play</span></th>
+<td>Typical</td>
+<td class='num'>0.4561%</td>
+<td class='num'>99.5439%</td>
+<td class='num'>0.4561%</td>
+<td>Wizard of Odds</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Jacks or Better</span><span class='variant'>8/5, perfect play</span></th>
+<td>Typical</td>
+<td class='num'>2.7016%</td>
+<td class='num'>97.2984%</td>
+<td class='num'>2.7016%</td>
+<td>Wizard of Odds</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Jacks or Better</span><span class='variant'>7/5, perfect play</span></th>
+<td>Typical</td>
+<td class='num'>3.8528%</td>
+<td class='num'>96.1472%</td>
+<td class='num'>3.8528%</td>
+<td>Wizard of Odds</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Jacks or Better</span><span class='variant'>6/5, perfect play</span></th>
+<td>Typical</td>
+<td class='num'>5.0039%</td>
+<td class='num'>94.9961%</td>
+<td class='num'>5.0039%</td>
+<td>Wizard of Odds</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Jacks or Better</span><span class='variant'>Duel Video Poker, perfect play, within daily limits</span></th>
+<td>Duel</td>
+<td class='num'>0.10%</td>
+<td class='num'>99.90%</td>
+<td class='num'>0%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Jacks or Better</span><span class='variant'>Duel Video Poker, top paytable tier</span></th>
+<td>Duel</td>
+<td class='num'>0.61%</td>
+<td class='num'>99.39%</td>
+<td class='num'>0.61%</td>
+<td>WhyDuel</td>
+</tr>
+</tbody></table></div>
+    </section>
+
+    <section id="originals">
+      <h2>Crypto in-house games</h2>
+      <p>Most crypto casinos price their own dice, crash, mines, plinko and limbo games at 99% RTP, a 1% house edge. Some modes run at 97% or lower. That 1% is also the usual published line on Stake Originals such as Dice, Limbo and Mines. It does not apply to Stake Original blackjack, which is listed separately at 0.57%.</p>
+      <p>Duel's Originals in this family have raw math of 99.9%. The last 0.1% is refunded as instant rakeback on wagers up to $50,000 per 24 hours, usually with a $1,000 max bet, so the net edge is 0%. Above those limits the edge is from 0.1%, and it rises with bet size. The game shows the current figure before you bet. The vast majority of players stay inside the daily window.</p>
+      <p>Two Duel titles are published at 100% RTP rather than as 99.9% plus a 0.1% refund: Beef, and Castle Roulette, Duel's own 48-position live wheel. Those are listed at 0% net edge as published.</p>
+      <div class="table-wrap">
+<table>
+<caption>Crypto in-house games and Originals</caption>
+<thead><tr>
+<th scope='col'>Game and variant</th>
+<th scope='col'>Operator</th>
+<th scope='col' class='num'>House edge</th>
+<th scope='col' class='num'>RTP</th>
+<th scope='col' class='num'>Net edge</th>
+<th scope='col'>Source</th>
+</tr></thead><tbody>
+<tr>
+<th scope='row'><span class='game'>Dice, Crash, Mines, Plinko, Limbo (typical)</span><span class='variant'>Common crypto Originals at 99% RTP</span></th>
+<td>Typical crypto casino</td>
+<td class='num'>1% typical</td>
+<td class='num'>99% typical</td>
+<td class='num'>1% typical</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Stake Originals (Dice, Limbo, Mines and similar)</span><span class='variant'>Stake Originals other than blackjack</span></th>
+<td>Stake</td>
+<td class='num'>1%</td>
+<td class='num'>99%</td>
+<td class='num'>1%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Stake house games (tracker average)</span><span class='variant'>FairGambling average across Stake house games</span></th>
+<td>Stake</td>
+<td class='num'>1.7% average</td>
+<td class='num'>98.3% average</td>
+<td class='num'>1.7% average</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Duel Originals (Dice, Crash, Plinko, Mines, Limbo, Keno, Hilo)</span><span class='variant'>Within daily zero-edge limits</span></th>
+<td>Duel</td>
+<td class='num'>0.10%</td>
+<td class='num'>99.90%</td>
+<td class='num'>0%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Duel Originals (Dice, Crash, Plinko, Mines, Limbo, Keno, Hilo)</span><span class='variant'>Above daily limits, scaling edge</span></th>
+<td>Duel</td>
+<td class='num'>from 0.1%</td>
+<td class='num'>from 99.9% down</td>
+<td class='num'>from 0.1%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Beef</span><span class='variant'>Duel Original, stated 100% RTP</span></th>
+<td>Duel</td>
+<td class='num'>0%</td>
+<td class='num'>100%</td>
+<td class='num'>0%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Castle Roulette</span><span class='variant'>Duel Original live wheel, 48 positions</span></th>
+<td>Duel</td>
+<td class='num'>0%</td>
+<td class='num'>100%</td>
+<td class='num'>0%</td>
+<td>WhyDuel</td>
+</tr>
+</tbody></table></div>
+    </section>
+
+    <section id="slots">
+      <h2>Slots, game shows and keno</h2>
+      <p>Online slots usually sit between 94% and 98% RTP, a 2% to 6% house edge. The same title is often offered in several versions. Live game shows are typically in a 94% to 97% band, and the exact return depends on the bet spot. Land-based keno is in another league: Wizard of Odds puts live keno in Las Vegas at 65% to 80% RTP, a 20% to 35% house edge.</p>
+      <p>On third-party slots and live games, Duel pays 50% of the house edge back as instant, withdrawable cash. A 96% slot, which has a 4% edge, then plays at a 2% net edge. FairGambling's Duel catalogue, fetched on 19 November 2026, lists Gates of Olympus 1000 at 96.5% and Sweet Bonanza 1000 at 96.53%. If the same 50% rakeback applies, those net edges are 1.75% and about 1.74%. Always check the tile for the version you are actually playing.</p>
+      <p>Groomer's Van is a slot Duel built itself. WhyDuel lists it at 100% RTP. The same page notes that ProvablyFair.org simulated 30 million rounds at 100.06% RTP.</p>
+      <div class="table-wrap">
+<table>
+<caption>Slots, live game shows and land-based keno</caption>
+<thead><tr>
+<th scope='col'>Game and variant</th>
+<th scope='col'>Operator</th>
+<th scope='col' class='num'>House edge</th>
+<th scope='col' class='num'>RTP</th>
+<th scope='col' class='num'>Net edge</th>
+<th scope='col'>Source</th>
+</tr></thead><tbody>
+<tr>
+<th scope='row'><span class='game'>Online slots (typical range)</span><span class='variant'>Third-party slots, published RTP band</span></th>
+<td>Typical</td>
+<td class='num'>2% to 6%</td>
+<td class='num'>94% to 98%</td>
+<td class='num'>2% to 6%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Online slots at Duel (example 96% title)</span><span class='variant'>Third-party slot with 50% instant rakeback</span></th>
+<td>Duel</td>
+<td class='num'>4%</td>
+<td class='num'>96%</td>
+<td class='num'>2%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Gates of Olympus 1000</span><span class='variant'>Third-party slot in Duel's catalogue</span></th>
+<td>Duel</td>
+<td class='num'>3.5%</td>
+<td class='num'>96.5%</td>
+<td class='num'>1.75%</td>
+<td>FairGambling</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Sweet Bonanza 1000</span><span class='variant'>Third-party slot in Duel's catalogue</span></th>
+<td>Duel</td>
+<td class='num'>3.47%</td>
+<td class='num'>96.53%</td>
+<td class='num'>1.735%</td>
+<td>FairGambling</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Groomer's Van</span><span class='variant'>Duel's own slot, stated 100% RTP</span></th>
+<td>Duel</td>
+<td class='num'>0%</td>
+<td class='num'>100%</td>
+<td class='num'>0%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Live game shows (typical)</span><span class='variant'>Third-party live game shows</span></th>
+<td>Typical</td>
+<td class='num'>4% to 6%</td>
+<td class='num'>94% to 97%</td>
+<td class='num'>4% to 6%</td>
+<td>WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Land-based keno</span><span class='variant'>Typical live keno in Las Vegas and similar markets</span></th>
+<td>Typical</td>
+<td class='num'>20% to 35%</td>
+<td class='num'>65% to 80%</td>
+<td class='num'>20% to 35%</td>
+<td>Wizard of Odds</td>
+</tr>
+</tbody></table></div>
+    </section>
+
+    <section id="comparison">
+      <h2>Casino comparison</h2>
+      <p>This section only includes operator figures that can be tied to a public page. It is not a ranking of every casino, and it is not a complete catalogue. The comparison that can be sourced most clearly is Duel against Stake, using Stake's own published blackjack edge, the usual 1% line on Stake Originals other than blackjack, FairGambling's blended house-game and sportsbook averages, and Duel's published refund model.</p>
+      <p>A longer walkthrough of those figures is in the <a href="https://whyduel.com/duel-vs-casinos/duel-vs-stake">Duel vs Stake comparison on whyduel.com</a>. The background math for the table-game rows is also collected in WhyDuel's <a href="https://whyduel.com/house-edge-guide">house edge guide</a>.</p>
+      <div class="table-wrap">
+<table>
+<caption>Operator comparison where figures can be sourced</caption>
+<thead><tr>
+<th scope='col'>Game</th>
+<th scope='col'>Operator</th>
+<th scope='col' class='num'>House edge</th>
+<th scope='col' class='num'>RTP</th>
+<th scope='col' class='num'>Net edge</th>
+<th scope='col'>Notes</th>
+</tr></thead><tbody>
+<tr>
+<th scope='row'><span class='game'>Blackjack (Duel Original)</span></th>
+<td>Duel</td>
+<td class='num'>0.57%</td>
+<td class='num'>99.43%</td>
+<td class='num'>0%</td>
+<td>Within daily limits, perfect basic strategy</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Blackjack (Stake Original)</span></th>
+<td>Stake</td>
+<td class='num'>0.57%</td>
+<td class='num'>99.43%</td>
+<td class='num'>0.57%</td>
+<td>Every hand, as listed</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Duel Originals (Dice, Crash, Plinko, Mines, Limbo, Keno, Hilo)</span></th>
+<td>Duel</td>
+<td class='num'>0.10%</td>
+<td class='num'>99.90%</td>
+<td class='num'>0%</td>
+<td>Within daily limits</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Stake Originals (Dice, Limbo, Mines and similar)</span></th>
+<td>Stake</td>
+<td class='num'>1%</td>
+<td class='num'>99%</td>
+<td class='num'>1%</td>
+<td>Not blackjack</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Stake house games (tracker average)</span></th>
+<td>Stake</td>
+<td class='num'>1.7% average</td>
+<td class='num'>98.3% average</td>
+<td class='num'>1.7% average</td>
+<td>FairGambling blended figure</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Typical crypto in-house games</span></th>
+<td>Typical crypto casino</td>
+<td class='num'>1% typical</td>
+<td class='num'>99% typical</td>
+<td class='num'>1% typical</td>
+<td>Usual published 99% RTP line</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Third-party slots at Duel</span></th>
+<td>Duel</td>
+<td class='num'>4%</td>
+<td class='num'>96%</td>
+<td class='num'>2%</td>
+<td>Example: a 96% slot with 50% rakeback</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Sportsbook (Duel)</span></th>
+<td>Duel</td>
+<td class='num'>1.96%</td>
+<td class='num'>98.04%</td>
+<td class='num'>1.96%</td>
+<td>FairGambling average, no rakeback</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Sportsbook (Stake)</span></th>
+<td>Stake</td>
+<td class='num'>5.36%</td>
+<td class='num'>94.64%</td>
+<td class='num'>5.36%</td>
+<td>FairGambling average, as cited on WhyDuel</td>
+</tr>
+<tr>
+<th scope='row'><span class='game'>Duel Arena (player versus player)</span></th>
+<td>Duel</td>
+<td class='num'>0%</td>
+<td class='num'>100%</td>
+<td class='num'>0%</td>
+<td>No house rake on the pot</td>
+</tr>
+</tbody></table></div>
+      <p>Read the net column first. Duel's Originals, including blackjack, are 0% inside the daily limits. Stake Original blackjack is 0.57% on every hand, and Stake's other Originals are typically 1%. FairGambling's blended average for Stake house games is 1.7%. On third-party slots, Duel halves the provider edge. Instant rakeback does not apply to Duel's sportsbook, where FairGambling lists a 1.96% average edge, against 5.36% for Stake.</p>
+    </section>
+
+    <section id="method">
+      <h2>Methodology</h2>
+      <p>Each row is one of four kinds of number.</p>
+      <p><strong>Exact calculation.</strong> Roulette edges are closed-form fractions from the number of pockets and the published payout, including the first-five bet and la partage on even-money bets. The two-decimal figures in the tables are the usual rounded forms of those fractions.</p>
+      <p><strong>Published reference.</strong> Baccarat, craps, Jacks or Better paytables, and the land-keno range come from Wizard of Odds pages fetched on 19 November 2026. The Jacks or Better totals are the site's full enumerations (return 0.99543904 for 9/6, 0.97298434 for 8/5, 0.961472 for 7/5, 0.949961 for 6/5).</p>
+      <p><strong>Published operator.</strong> Duel figures come from live whyduel.com pages checked on the same day, which in turn cite Duel's game info, economics changelog and, where named, ProvablyFair.org. Stake Original blackjack at 0.57% and Stake Originals at 1% are taken from those WhyDuel pages, which cite Stake's own listings.</p>
+      <p><strong>Published tracker.</strong> FairGambling averages were read on 19 November 2026 from FairGambling's Duel page (house-game RTP 100%, sport edge 1.96%, and the two slot catalogue figures above) and, for Stake, from the WhyDuel comparison that cites FairGambling (house-game average 98.3%, sport edge 5.36%).</p>
+      <p>No row was invented to fill a gap. If a figure is approximate ("about 0.5%"), it is marked that way. If a source gives a range, the range is what appears. Duel-specific wording follows the operator's published limits: 0% vs 0.57% for blackjack within the limits, from 0.1% once those limits are exceeded, and "the vast majority" for how many players stay inside the window.</p>
+      <p>This page does not model betting systems, card counting, slot bonus-buy modes, or the effect of imperfect strategy except to note that mistakes raise the edge in blackjack and video poker. Variance is not edge. A 0% game can still empty a bankroll on a short session, and a 5% game can still have a winning night.</p>
+    </section>
+
+    <section id="sources">
+      <h2>Sources</h2>
+      <p>All of the following were opened over https on 19 November 2026, except the Stake Original blackjack listing, which WhyDuel records from Stake's game page via an 11 October 2026 Wayback capture. Duel's own economics pages are JavaScript shells when fetched without a browser, so the Duel numbers below are taken from the live WhyDuel pages that quote them.</p>
+      <ol class="sources">
+        <li><span class="n">1.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/roulette/">Roulette</a>. Single-zero 1/37 or 2.70%, double-zero 1/19 or 5.26%, first-five 7.89%, triple-zero 1/13 or 7.69%.</li>
+        <li><span class="n">2.</span> Wizard of Odds, <a href="https://wizardofodds.com/ask-the-wizard/178/">Ask the Wizard 178</a>. Eight-deck baccarat, ties counted: banker 1.06%, player 1.24%, tie 14.36%.</li>
+        <li><span class="n">3.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/craps/">Craps</a>. Pass 1.41%, don't pass 1.36%, taking or laying odds 0.00%.</li>
+        <li><span class="n">4.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/video-poker/tables/jacks-or-better/">Jacks or Better tables</a>, last updated 3 August 2026. 9/6, 8/5, 7/5 and 6/5 perfect-play returns.</li>
+        <li><span class="n">5.</span> Wizard of Odds, <a href="https://wizardofodds.com/games/keno/">Keno</a>. Live keno in Las Vegas, 65% to 80% return.</li>
+        <li><span class="n">6.</span> WhyDuel, <a href="https://whyduel.com/house-edge-guide">Casino house edge guide</a>. Typical table-game figures, crypto 99% RTP line, slot and game-show bands, Duel refund model.</li>
+        <li><span class="n">7.</span> WhyDuel, <a href="https://whyduel.com/games/blackjack">Blackjack at Duel</a>. 0% vs 0.57% within the limits, scaling edge, live-game RTPs, Stake Original blackjack 0.57%.</li>
+        <li><span class="n">8.</span> WhyDuel, <a href="https://whyduel.com/games/video-poker">Video poker at Duel</a>. Paytable, 99.90% perfect play, 99.39% top tier.</li>
+        <li><span class="n">9.</span> WhyDuel, <a href="https://whyduel.com/duel-vs-casinos/duel-vs-stake">Duel vs Stake</a>. FairGambling averages for Stake house games and both sportsbooks, 1% to 4% band.</li>
+        <li><span class="n">10.</span> WhyDuel, <a href="https://whyduel.com/games/slots">Slots at Duel</a>. 50% instant rakeback example, Groomer's Van, usual 94% to 97% third-party band.</li>
+        <li><span class="n">11.</span> FairGambling, <a href="https://www.fairgambling.com/duel">Duel profile</a>. Average house RTP 100%, average sport edge 1.96%, Gates of Olympus 1000 96.5%, Sweet Bonanza 1000 96.53%.</li>
+        <li><span class="n">12.</span> WhyDuel Dice, Crash and Plinko game pages, checked on the same day, confirm the 99.9% raw math, the 0.1% refund and the "from 0.1%" scaling language already cited in the house edge guide above.</li>
+      </ol>
+      <p>Wizard of Odds, FairGambling and WhyDuel remain responsible for their own pages. If a source changes, the CSV should be updated on the next check, not silently padded.</p>
+    </section>
+
+    <footer>
+      <p>House Edge Index is an independent data project. It is not affiliated with, endorsed by or operated by any casino. The figures describe long-run expected value. They are not a forecast of any one session, and they are not advice to play or not to play.</p>
+      <p>Data and page text are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>. Please credit "House Edge Index" and link back to this page when you reuse the tables.</p>
+    </footer>
+  </div>
+</body>
+</html>
